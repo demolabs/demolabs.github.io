@@ -399,7 +399,8 @@
             let btnOpenCam = document.getElementById("btnOpenCam");
             let btnUsePic = document.getElementById("btnUsePic");
             let camStream = document.getElementById("camStream");
-            camStream.src = window.URL.createObjectURL(stream);
+            //camStream.src = window.URL.createObjectURL(stream);
+            camStream.srcObject = stream;
             camStream.play();
             btnOpenCam.style.display = "none";
             btnUsePic.style.display = "block";
